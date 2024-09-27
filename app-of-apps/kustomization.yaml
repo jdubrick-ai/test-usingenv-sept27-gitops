@@ -1,0 +1,10 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+commonLabels:         
+  rhtap/gitops: test-usingenv-sept27 
+  janus-idp.io/tekton: test-usingenv-sept27
+  backstage.io/kubernetes-id: test-usingenv-sept27
+  backstage.io/kubernetes-namespace: ai-rhdh-app-development 
+  app.kubernetes.io/part-of: test-usingenv-sept27
+resources: 
+- application-dev.yaml
